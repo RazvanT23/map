@@ -17,7 +17,7 @@ public class Zahlen {
         System.out.println("Minimale Summe von n-1 Zahlen: " + minimaleSumme);
     }
 
-    // Methode 1: Findet die maximale Zahl im Array
+
     public static int findeMaximaleZahl(int[] zahlen) {
         int maximum = zahlen[0];
         for (int zahl : zahlen) {
@@ -28,7 +28,7 @@ public class Zahlen {
         return maximum;
     }
 
-    // Methode 2: Findet die minimale Zahl im Array
+
     public static int findeMinimaleZahl(int[] zahlen) {
         int minimum = zahlen[0];
         for (int zahl : zahlen) {
@@ -39,7 +39,7 @@ public class Zahlen {
         return minimum;
     }
 
-    // Methode 3: Findet die maximale Summe von n-1 Zahlen im Array
+
     public static int findeMaximaleSumme(int[] zahlen) {
         int summe = 0;
         Arrays.sort(zahlen);
@@ -49,7 +49,7 @@ public class Zahlen {
         return summe;
     }
 
-    // Methode 4: Findet die minimale Summe von n-1 Zahlen im Array
+
     public static int findeMinimaleSumme(int[] zahlen) {
         int summe = 0;
         Arrays.sort(zahlen);
@@ -59,7 +59,7 @@ public class Zahlen {
         return summe;
     }
 
-    // Hilfsmethode: Berechnet das Array mit n-1 Zahlen
+
     public static int[] nMinusEinsSumme(int[] zahlen) {
         int[] nMinusEinsArray = new int[zahlen.length - 1];
         for (int i = 0, j = 0; i < zahlen.length; i++) {

@@ -28,7 +28,7 @@ public class JavaUniversitaet {
         System.out.println("Maximale abgerundete Note: " + maximaleAbgerundeteNote);
     }
 
-    // Methode 1: Filtert nicht ausreichende Noten
+
     public static int[] filterNichtAusreichendeNoten(int[] noten) {
         ArrayList<Integer> nichtAusreichendeNoten = new ArrayList<>();
         for (int note : noten) {
@@ -36,11 +36,11 @@ public class JavaUniversitaet {
                 nichtAusreichendeNoten.add(note);
             }
         }
-        // Konvertiert ArrayList zu Array
+
         return nichtAusreichendeNoten.stream().mapToInt(i -> i).toArray();
     }
 
-    // Methode 2: Berechnet den Durchschnitt der Noten
+
     public static double berechneDurchschnittsNote(int[] noten) {
         int summe = 0;
         for (int note : noten) {
@@ -49,7 +49,7 @@ public class JavaUniversitaet {
         return (double) summe / noten.length;
     }
 
-    // Methode 3: Rundet die Noten ab
+
     public static int[] rundeNotenAb(int[] noten) {
         int[] abgerundeteNoten = new int[noten.length];
         for (int i = 0; i < noten.length; i++) {
@@ -67,7 +67,7 @@ public class JavaUniversitaet {
         return abgerundeteNoten;
     }
 
-    // Methode 4: Findet die maximale abgerundete Note
+
     public static int findeMaximaleAbgerundeteNote(int[] noten) {
         int[] abgerundeteNoten = rundeNotenAb(noten);
         int maximum = abgerundeteNoten[0];

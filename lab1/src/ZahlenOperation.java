@@ -18,7 +18,7 @@ public class ZahlenOperation {
         printArray(division);
     }
 
-    // Methode 1: Berechnet die Summe von zwei großen Zahlen
+
     public static int[] berechneSumme(int[] zahl1, int[] zahl2) {
         int carry = 0;
         int[] summe = new int[zahl1.length];
@@ -30,7 +30,7 @@ public class ZahlenOperation {
         return summe;
     }
 
-    // Methode 2: Berechnet die Differenz von zwei großen Zahlen
+
     public static int[] berechneDifferenz(int[] zahl1, int[] zahl2) {
         int borrow = 0;
         int[] differenz = new int[zahl1.length];
@@ -47,7 +47,7 @@ public class ZahlenOperation {
         return differenz;
     }
 
-    // Methode 3: Multipliziert eine große Zahl mit einer Ziffer
+
     public static int[] berechneMultiplikation(int[] zahl, int factor) {
         int carry = 0;
         int[] multiplikation = new int[zahl.length];
@@ -59,7 +59,7 @@ public class ZahlenOperation {
         return multiplikation;
     }
 
-    // Methode 4: Berechnet die ganzzahlige Division einer großen Zahl durch eine Ziffer
+
     public static int[] berechneGanzzahligeDivision(int[] zahl, int divisor) {
         int[] division = new int[zahl.length];
         int remainder = 0;
@@ -71,7 +71,7 @@ public class ZahlenOperation {
         return division;
     }
 
-    // Hilfsmethode: Gibt ein Array aus
+
     public static void printArray(int[] array) {
         for (int num : array) {
             System.out.print(num);

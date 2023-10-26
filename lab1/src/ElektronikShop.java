@@ -16,7 +16,7 @@ public class ElektronikShop {
         System.out.println("Geldbetrag, den Markus ausgeben wird: " + geldbetrag);
     }
 
-    // Methode 1: Findet die billigste Tastatur
+
     public static int findeBilligsteTastatur(int[] tastaturen) {
         int billigsteTastatur = Integer.MAX_VALUE;
         for (int preis : tastaturen) {
@@ -25,7 +25,7 @@ public class ElektronikShop {
         return billigsteTastatur;
     }
 
-    // Methode 2: Findet den teuersten Gegenstand
+
     public static int findeTeuerstenGegenstand(int[] tastaturen, int[] usbLaufwerke) {
         int teuersterGegenstand = Integer.MIN_VALUE;
         for (int preis : tastaturen) {
@@ -37,7 +37,7 @@ public class ElektronikShop {
         return teuersterGegenstand;
     }
 
-    // Methode 3: Findet das teuerste USB Laufwerk innerhalb des Budgets
+
     public static int findeTeuerstesUsbLaufwerk(int[] usbLaufwerke, int budget) {
         int teuerstesUsbLaufwerk = -1;
         for (int preis : usbLaufwerke) {
@@ -48,15 +48,17 @@ public class ElektronikShop {
         return teuerstesUsbLaufwerk;
     }
 
-    // Methode 4: Findet den Geldbetrag, den Markus ausgeben wird (-1, wenn er nicht genug für beide hat)
+
     public static int findeGeldbetrag(int[] tastaturen, int[] usbLaufwerke, int budget) {
         int billigsteTastatur = findeBilligsteTastatur(tastaturen);
         int teuerstesUsbLaufwerk = findeTeuerstesUsbLaufwerk(usbLaufwerke, budget);
 
         if (billigsteTastatur == Integer.MAX_VALUE || teuerstesUsbLaufwerk == -1) {
-            return -1; // Markus kann nicht genug für beide Gegenstände ausgeben
+            return -1;
         }
 
         return billigsteTastatur + teuerstesUsbLaufwerk;
     }
 }
+
+
